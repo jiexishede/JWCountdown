@@ -77,7 +77,7 @@ static char disabledTitleKey = 'k';
     [countdownScanner scanUpToCharactersFromSet:decimalDigitCharacterSet intoString:&firstString];
     [countdownScanner scanDecimal:&middleDecimal];
     [countdownScanner scanUpToCharactersFromSet:anyCharacterSet intoString:&lastString];
-    
+    // 货币 apple 钱类。
     NSDecimalNumber *middleDecimalNumber = [NSDecimalNumber decimalNumberWithDecimal:middleDecimal];
     NSDecimalNumber *timeIntervalDecimalNumber = [NSDecimalNumber decimalNumberWithString:@(self.countdownTimer.timeInterval).stringValue];
     
